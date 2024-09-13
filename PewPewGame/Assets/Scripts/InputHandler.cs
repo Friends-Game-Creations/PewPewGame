@@ -16,9 +16,9 @@ public class InputHandler : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        moveMentExcecuter();
+        Excecuter();
     }
-    private void moveMentExcecuter(){
+    private void Excecuter(){
         movement.movement(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
     }
 }
